@@ -1,4 +1,4 @@
-package org.example.restapi.section01.response;
+package com.ohgiraffers.restapi.section01.response;
 
 public class Message {
 
