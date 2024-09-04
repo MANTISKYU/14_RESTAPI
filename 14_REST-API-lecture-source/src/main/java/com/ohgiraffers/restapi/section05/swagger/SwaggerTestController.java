@@ -92,6 +92,7 @@ public class SwaggerTestController {
         return ResponseEntity.ok()
                 .headers(headers)
                 .body(new ResponseMessage(200, "조회성공", responseMap));
+        //
     }
 
     // 회원 추가
@@ -110,6 +111,10 @@ public class SwaggerTestController {
         return ResponseEntity
                 .created(URI.create("/entity/users/"+ users.get(users.size() -1).getNo()))
                 .build();
+
+        //  return ResponseEntity.ok()
+        //                .headers(headers)
+        //                .body(new ResponseMessage(200, "추가 성공", responseMap));
     }
 
     // 수정
